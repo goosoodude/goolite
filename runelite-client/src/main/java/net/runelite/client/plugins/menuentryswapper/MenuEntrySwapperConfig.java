@@ -239,4 +239,26 @@ public interface MenuEntrySwapperConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+		position = 19,
+		keyName = "WithdrawX",
+		name = "Withdraw X",
+		description = "Allows left-clicking of Withdraw X in bank"
+	)
+	default boolean withdrawX()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 20,
+			keyName = "DepositX",
+			name = "Deposit X",
+			description = "Allows left-clicking of Deposit X in bank"
+	)
+	default boolean depositX()
+	{
+		return true;
+	}
 }
